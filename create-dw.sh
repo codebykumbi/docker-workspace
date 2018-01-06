@@ -30,7 +30,7 @@ case "$environment" in
             echo "The working directory must be empty"
             exit 1
         fi
-        docker run --rm -it ${docker_opts} -v "$working_directory":/usr/src/myapp -w /usr/src/myapp codebykumbi/create-react-app:latest bash
+        docker run --rm -it ${docker_opts} -v "$working_directory":/usr/src/myapp -w /usr/src/myapp codebykumbi/dw-create-react-app:latest bash
         ;;
 
     *)
